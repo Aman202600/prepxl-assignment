@@ -1,0 +1,43 @@
+:root {
+  --bg-primary: #0f0f13;
+  --bg-secondary: #1a1a23;
+  --accent-primary: #8b5cf6;
+  /* Violet */
+  --accent-glow: rgba(139, 92, 246, 0.5);
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+button {
+  font-family: inherit;
+}
